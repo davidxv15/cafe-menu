@@ -88,6 +88,7 @@ footer {
 
 a {
   color: black;
+  top: -12px;
 }
 
 a:visited {
@@ -102,11 +103,40 @@ a:active {
   color: brown;
 }
 
+#follow {
+  top: 16px;
+  font-size: 17px;
+  position: relative;
+}
+
 .ig-logo {
   height: 10%;
   width: 10%;
   position: relative;
   top: -10px;
   left: 60px;
+  
   /* float: right; */
+}
+
+.box {
+  align-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  margin: 0 auto 0 auto;
+  transform-origin: bottom;
+}
+
+.bounce-5 {
+  animation-name: bounce-5;
+  animation-timing-function: ease;
+}
+@keyframes bounce-5 {
+  0%   { transform: scale(1,1)    translateY(-10px); }
+  10%  { transform: scale(1.1,.9) translateY(-10px); }
+  30%  { transform: scale(.9,1.1) translateY(-16px); }
+  50%  { transform: scale(1,1)    translateY(-10px); }
+  57%  { transform: scale(1,1)    translateY(-7px); }
+  64%  { transform: scale(1,1)    translateY(-10px); }
+  100% { transform: scale(1,1)    translateY(-10px); }
 }
