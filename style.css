@@ -115,7 +115,7 @@ a:active {
   position: relative;
   top: -10px;
   left: 60px;
-  
+
   /* float: right; */
 }
 
@@ -132,11 +132,25 @@ a:active {
   animation-timing-function: ease;
 }
 @keyframes bounce-5 {
-  0%   { transform: scale(1,1)    translateY(-10px); }
-  10%  { transform: scale(1.1,.9) translateY(-10px); }
-  30%  { transform: scale(.9,1.1) translateY(-16px); }
-  50%  { transform: scale(1,1)    translateY(-10px); }
-  57%  { transform: scale(1,1)    translateY(-7px); }
-  64%  { transform: scale(1,1)    translateY(-10px); }
-  100% { transform: scale(1,1)    translateY(-10px); }
+  0% {
+    transform: scale(1, 1) translateY(-10px);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(-10px);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-12px);
+  }
+  50% {
+    transform: scale(1, 1) translateY(-10px);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-11px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(-10px);
+  }
+  100% {
+    transform: scale(1, 1) translateY(-10px);
+  }
 }
